@@ -5,10 +5,10 @@ const inscriptions=[
 {id:13,nom:'Chaouki',filiere:'DEV'}
 ];
 function insérer(n,f){
-    let derniere_inscription=inscriptions[inscriptions.length]
-    console.log(derniere_inscription)
-    let i=derniere_inscription.id+1
+    var identifiants=inscriptions.map((i)=>i.id)
+    var i=Math.max(...identifiants)+1
+    console.log(i)
     inscriptions.splice(inscriptions.length,0,{id:i,nom:n,filiere:f})
 }
-insérer(14,"reda","DEV")
+insérer("reda","DEV")
 console.log(inscriptions)
