@@ -4,3 +4,5 @@ const personnes = [
 { nom: "Chakib", age: 45, estMember: true },
 { nom: "Mounir", age: 37, estMember: false },
 ];
+let membres=personnes.filter((p)=>p.estMember==true)
+console.log(membres)
