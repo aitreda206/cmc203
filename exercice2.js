@@ -6,3 +6,5 @@ const personnes = [
 ];
 let membres=personnes.filter((p)=>p.estMember==true)
 console.log(membres)
+let nomAgés=membres.map(m=>m.nom)
+console.log(nomAgés)
